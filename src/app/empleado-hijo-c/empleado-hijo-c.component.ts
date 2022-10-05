@@ -9,7 +9,18 @@ import { Empleado } from '../empleado.model';
 export class EmpleadoHijoCComponent implements OnInit {
   @Input() empleadoDeLista: Empleado;
   @Input() indice: number;
+
+  arrayCaracteristicas = ['no funciono'];
+
+  agregarCaracteristica(nuevaCaracteristica: string) {
+    this.arrayCaracteristicas.push(nuevaCaracteristica);
+  }
+
   constructor() {}
 
   ngOnInit(): void {}
+
+
+  
+
 }

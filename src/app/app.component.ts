@@ -16,16 +16,17 @@ export class AppComponent {
     new Empleado('Constanza', 'Pizarro', 'Diseño UX/UI', 1000),
   ];
 
-  agregarEmpleado() {
-    let miEmpleado = new Empleado(
+  insertarEmpleado() {
+    let nuevoEmpleado = new Empleado(
       this.cuadroNombre,
       this.cuadroApellido,
       this.cuadroCargo,
       this.cuadroSalario
     );
 
-    this.empleados.push(miEmpleado);
+    this.empleados.push(nuevoEmpleado);
   }
+
 
   cuadroNombre: string = '';
   cuadroApellido: string = '';
